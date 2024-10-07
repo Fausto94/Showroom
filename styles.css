@@ -1,0 +1,107 @@
+/*
+*{
+    outline: 3px solid red;
+}
+*/
+
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    background-color: rgb(87, 52, 200);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    min-height: 70px;
+}
+.marca{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.logo{
+    object-fit: contain;
+    max-height: 70px;
+}
+
+a{
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 6px;
+    list-style: none;
+}
+@media(max-width: 600px){
+    nav ul{
+        flex-direction: column;
+    }
+}
+
+
+.list{
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.list li{
+    width: 80%;
+    flex-shrink: 0;
+    height: 200px;
+    scroll-snap-align: center;
+}
+.list img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.prueba{
+    outline: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 300px;
+    margin: 10px;
+    
+}
+.producto{
+    width: 100%;
+    height: 70%;
+}
+.prueba img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: top;
+}
+.dato{
+    height: 30%;
+    width: 100%;
+}
+
+/*
+section div{
+    display: flex;
+    height: 200px;
+}
+section div img{
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+}
+    */
