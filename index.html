@@ -7,7 +7,11 @@
         <title>By Mariela Showroom</title>
         <link rel="icon" type="image/ico" href="imagenes/corazon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
     </head>
     <body>
         <header>
@@ -22,31 +26,23 @@
                     <i class="fa-solid fa-bars"></i>
                 </label>
                     <ul class="sections">
-                        <li><a href="#" class="nav-link"><h2>Remeras</h2></a></li>
-                        <li><a href="#" class="nav-link"><h2>Pantalones</h2></a></li>
-                        <li><a href="#" class="nav-link"><h2>Sweaters</h2></a></li>
+                        <li><a href="#remeras" class="nav-link"><h2>Remeras</h2></a></li>
+                        <li><a href="#pantalones" class="nav-link"><h2>Pantalones</h2></a></li>
+                        <li><a href="#sweaters" class="nav-link"><h2>Sweaters</h2></a></li>
                     </ul>
                 </nav>
                  
         </header>
         <section>
+
             <!--
-            <div class="carousel">
-                <img src="imagenes/7a95b3f9-2be4-45cb-ae8e-b197b8ca3a96.jpg" alt="q">
-                <img src="imagenes/8fccea71-a1a4-48b2-a95a-9f8b8a39557f.jpg" alt="q">
-                <img src="imagenes/0275b7a9-9270-40ee-ac17-51556cfed419.jpg" alt="q">
-                <img src="imagenes/878f3775-0fa0-45c7-bbe3-85e3f4eaf98e.jpg" alt="q">
-                <img src="imagenes/40463cbd-def2-4da7-8697-b8ec8fb2abd8.jpg" alt="q">
-            </div>
-            -->
-            
             <ul class="list">
                 <li>
                     <div class="producto">
                         <div class="producto-img">
                             <img src="imagenes/7a95b3f9-2be4-45cb-ae8e-b197b8ca3a96.jpg" alt="q">
                         </div> 
-                        <div class="dato">
+                        <div class="datos">
                             <p>REMERA LOVE</p>
                         </div>
                     </div>
@@ -56,7 +52,7 @@
                         <div class="producto-img">
                             <img src="imagenes/8fccea71-a1a4-48b2-a95a-9f8b8a39557f.jpg" alt="q">
                         </div> 
-                        <div class="dato">
+                        <div class="datos">
                             <p>REMERA LOVE</p>
                         </div>
                     </div>
@@ -66,7 +62,7 @@
                         <div class="producto-img">
                             <img src="imagenes/0275b7a9-9270-40ee-ac17-51556cfed419.jpg" alt="q">
                         </div> 
-                        <div class="dato">
+                        <div class="datos">
                             <p>REMERA LOVE</p>
                         </div>
                     </div>
@@ -76,7 +72,7 @@
                         <div class="producto-img">
                             <img src="imagenes/878f3775-0fa0-45c7-bbe3-85e3f4eaf98e.jpg" alt="q">
                         </div> 
-                        <div class="dato">
+                        <div class="datos">
                             <p>REMERA LOVE</p>
                         </div>
                     </div>
@@ -86,28 +82,231 @@
                         <div class="producto-img">
                             <img src="imagenes/40463cbd-def2-4da7-8697-b8ec8fb2abd8.jpg" alt="q">
                         </div> 
-                        <div class="dato">
+                        <div class="datos">
                             <p>REMERA LOVE</p>
                         </div>
                     </div>
                 </li>
             </ul>
+            -->
 
-            <div class="producto">
-                <div class="producto-img">
-                    <img src="imagenes/40463cbd-def2-4da7-8697-b8ec8fb2abd8.jpg" alt="q">
-                </div> 
-                <div class="dato">
-                    <p class="price">$1000</p>
-                    <p class="name">REMERA LOVE</p>
+            <div class="carrousel-box" id="remeras">
+                <b>RENERAS</b>
+                <div class="carrousel">
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/40463cbd-def2-4da7-8697-b8ec8fb2abd8.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p class="name">REMERA LOVE</p>
+                            <p class="price">$1000</p>                    
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/8fccea71-a1a4-48b2-a95a-9f8b8a39557f.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/2b74f2c3-d20f-4f30-a310-9bab2150e559.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p><p class="price">$1000</p> 
+                        </div>
+                    </div>
+
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/77cc14fa-20b4-4391-9ddf-746ee4d9f4c4.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/0146d6b5-a3ce-4840-af79-e00bdaf72536.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/160067ad-37ee-4b7f-a510-e78c8ed106c6.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/32583270-e8c1-47e9-879f-7b980142a2f1.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/a1398139-2c74-405b-a42f-db5063324ea2.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/ba22b373-140b-4cad-83d9-f9b8499ec94e.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/7f900868-31e5-4df5-bdd1-f90a2d386940.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/17e1ef35-44a7-4849-aec1-2e929e3548fd.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/24bbe6a7-68b5-4104-b583-5ddf11f1c100.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/78af8a2f-4ba2-44a7-bf9c-d064865408d8.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <footer>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/despegar/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+            <div class="carrousel-box" id="pantalones">
+                <b>PANTALONES</b>
+                <div class="carrousel">
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/878f3775-0fa0-45c7-bbe3-85e3f4eaf98e.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/29ed60ae-abc5-4ce9-9f1b-5b575ee657c9.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/e9fcdf1e-31ff-4f7b-9e9f-d885f8975aec.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/ef1ce565-b814-4d75-817d-ba7d4a5c2a63.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
                 </div>
-            </footer>
-        </section>
+            </div>
+
+
+
+
+            <div class="carrousel-box" id="sweaters">
+                <b>SWEATERS</b>
+                <div class="carrousel">
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/9c349094-001e-4195-b713-e968336edf23.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/dc0a9b94-633e-406b-9c28-8568d49a792c.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="producto-img">
+                            <img src="imagenes/31303093-593b-4be7-8328-5489d2faad4d.jpeg" alt="q">
+                        </div> 
+                        <div class="datos">
+                            <p>REMERA LOVE</p>
+                            <p class="price">$1000</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        </section>    
+        <footer>
+            <div class="instagram">
+                <a href="https://www.instagram.com/bymarielashowroom/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>	
+                © By Mariela Showroom 2024. Todos los derechos reservados.
+                Este sitio web y su contenido, incluidos imágenes, y textos, están protegidos por leyes de propiedad intelectual. Queda prohibida la reproducción total o parcial sin autorización previa y por escrito de By Mariela Showroom.
+            </p>
+        </footer>
     </body>
 </html>
