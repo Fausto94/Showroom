@@ -1,6 +1,8 @@
 :root{
-    --color-header: #5734c8;
-    --color-header-secundario: #4427a2;
+    --color-primario: #5734c8;
+    --color-secundario: #4427a2;
+    --color-terciario: #9d36e1;
+
 }
 
 *{
@@ -8,10 +10,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{
     display: flex;
     flex-direction: row;
-    background-color: var(--color-header);
+    background-color: var(--color-primario);
     justify-content: space-between;
     align-items: center;
     padding: 0 8px;
@@ -55,6 +58,7 @@ nav ul{
     list-style-type: none;
     height: 100%;
     align-items: center;
+    z-index: 1;
 }
 
 nav ul li{
@@ -65,7 +69,7 @@ nav ul li{
     height: 100%;
 }
 nav ul li:hover{
-    background-color: var(--color-header-secundario);
+    background-color: var(--color-secundario);
     text-decoration: underline;
 }
 
@@ -97,7 +101,7 @@ nav ul li:hover{
 
     nav ul li :hover{
         border-bottom: 0;
-        background-color: var(--color-header-secundario);
+        background-color: var(--color-secundario);
     }
 
     .barras{
@@ -108,10 +112,9 @@ nav ul li:hover{
     .sections{
         flex-direction: column;
         position:absolute;
-
         height:fit-content;
         width:max-content;
-        background-color: var(--color-header);
+        background-color: var(--color-primario);
         top: 70px;
         left: -100%;
         text-align: center;
@@ -123,7 +126,39 @@ nav ul li:hover{
     }
 }
 
+.model{
+    max-height: 500px;
+    overflow: hidden;
+    /*background-image: url(imagenes/A-fashion-model.jpeg);*/
+}
 
+.model img{
+    object-fit: scale-down;
+    position: relative;
+    width: 100%;
+}
+
+.madre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.madre p{
+    font-size: 3.5vw;
+}
+
+.feliz{
+    color: #f00;
+    text-shadow: 0px 0px 4px #f00 ;
+}
+
+@media(max-width: 700px){
+    .madre p{
+        font-size: 20px;
+    }
+}
 
 .list{
     display: flex;
@@ -189,8 +224,24 @@ nav ul li:hover{
     padding-left: 6px;
 }
 .producto:hover{
-    outline: 2px solid var(--color-header);
-    
+    outline: 2px solid var(--color-primario);
+    box-shadow: 0 1px 10px var(--color-secundario);
+}
+
+@media (max-width: 600px){
+    .producto{
+        height: 200PX;
+    }
+    .producto-img{
+        height: 65%;
+    }
+    .producto-img img{
+        object-position: 0 -20px;
+    }
+    .datos{
+        gap: 0;
+        height: 35%;
+    }
 }
 
 /*    CARROUSEL    */
@@ -214,12 +265,72 @@ nav ul li:hover{
     scroll-snap-type: x mandatory;
 }
 
+/*    FORM    */
 
+.form-container{
+    border-radius: 25px;
+    display: flex;
+    background: linear-gradient( rgba(68,39,162,1) 30%, rgba(31,17,78,1) 100%);
+    margin: 30px;
+    padding: 7px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Oswald";
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 1px 2px 7px rgb(0, 0, 0, 1);
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 60%;
+    font-size: 25px;
+    border-radius: 10px;
+    padding-left: 4px;
+    border: 0;
+}
+
+select{
+    width: 30%;
+    font-size: 25px;
+    border-radius: 10px;
+    padding-left: 4px;
+    border: 0;
+}
+
+button{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0px 9px 3px 9px;
+    font-family: "Oswald";
+    border: 0;
+    transition: all 0.12s;
+}
+button:hover{
+    background: radial-gradient(circle, rgba(68,39,162,1) 20%, rgba(157, 54, 225,1) 100%);
+    outline: 2px solid var(--color-terciario);
+}
+
+@media (max-width: 700px){
+    .form-container {
+        font-size: 25px;
+        border-radius: 20px;
+    }
+
+    .email{
+        margin-top: 5px;
+    }
+}
 
 
 footer{
-    background-color: var(--color-header);
+    background-color: var(--color-primario);
     padding: 10px;
 }
 
